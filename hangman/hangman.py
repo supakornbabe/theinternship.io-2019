@@ -4,76 +4,76 @@ from random import randint
 
 directory = './Category/'
 file_location = './Category/'
-filelist = []
-categoryList = []
-userCategory = ''
-wordlist = {}
-loadedJSON = {}
+file_list = []
+category_list = []
+user_category = ''
+word_list = {}
+loaded_JSON = {}
 
 
-def listWordList():
-    global categoryList
+def listword_list():
+    global category_list
     print('Category:')
-    filelist = os.listdir(directory)
+    file_list = os.listdir(directory)
     num = 1
-    for i in filelist:
+    for i in file_list:
         name = i.split('.')[0]
         if name:
             print(num, end='.')
             print(name)
             num += 1
-            categoryList.append(name)
+            category_list.append(name)
 
 
-def chooseWordList():
-    global userCategory
-    userInput = int(input('Choose Your Category Number: '))
+def chooseword_list():
+    global user_category
+    user_input = int(input('Choose Your Category Number: '))
 
-    while userInput > len(categoryList):
-        userInput = int(input('Choose New Category Number: '))
+    while user_input > len(category_list):
+        user_input = int(input('Choose New Category Number: '))
 
     print('Category: ', end='')
-    print(categoryList[userInput-1])
-    userCategory = categoryList[userInput-1]
+    print(category_list[user_input-1])
+    user_category = category_list[user_input-1]
 
 
-def showHint(num):
+def show_hint(num):
     print('Hint: \" ', end='')
-    for i in loadedJSON['HINT'].split(' '):
+    for i in loaded_JSON['HINT'].split(' '):
         if i[0] == '$':
-            print(wordlist[num][i[1:]], end=' ')
+            print(word_list[num][i[1:]], end=' ')
         else:
             print(i, end=' ')
     print('\"')
 
 
 def rand():
-    global file_location, wordlist, loadedJSON
-    file_location = file_location + userCategory+'.json'
+    global file_location, word_list, loaded_JSON
+    file_location = file_location + user_category+'.json'
     print(file_location)
     f = open(file_location, 'r')
-    loadedJSON = json.load(f)
-    wordlist = loadedJSON['WORDLIST']
-    randomNumber = randint(1, len(wordlist))
-    randomNumber -= 1
-    return randomNumber
+    loaded_JSON = json.load(f)
+    word_list = loaded_JSON['WORDLIST']
+    random_number = randint(1, len(word_list))
+    random_number -= 1
+    return random_number
 
 
 def hangman(word):
-    tmpBlind = ''
+    tmp_blind = ''
     blind = []
     score = 0
-    ramainWrongGuess = 10
-    lenCharToAns = 0
-    wrongGuess = []
+    ramain_wrong_guess = 10
+    length_char_to_answer = 0
+    wrong_guess = []
     for char in word:
         if char.isalpha():
-            tmpBlind = tmpBlind+'_'
-            lenCharToAns += 1
+            tmp_blind = tmp_blind+'_'
+            length_char_to_answer += 1
         else:
-            tmpBlind = tmpBlind+char
-    blind = list(tmpBlind)
-    while lenCharToAns != 0 and ramainWrongGuess != 0:
+            tmp_blind = tmp_blind+char
+    blind = list(tmp_blind)
+    while length_char_to_answer != 0 and ramain_wrong_guess != 0:
         for i in blind:
             print(i, end=' ')
 
@@ -81,10 +81,10 @@ def hangman(word):
         print(score, end=' ')
 
         print('Remaining wrong guess ', end='')
-        print(ramainWrongGuess, end=' ')
+        print(ramain_wrong_guess, end=' ')
 
         print('Wrong guess ', end='')
-        print(wrongGuess)
+        print(wrong_guess)
 
         guess = input('> ')
         if len(guess) > 1:
@@ -95,13 +95,13 @@ def hangman(word):
             if blind[i] == '_' and word[i].lower() == guess:
                 score += 5
                 blind[i] = word[i]
-                lenCharToAns -= 1
+                length_char_to_answer -= 1
                 correct = True
-        if not correct and guess not in wrongGuess and guess not in word and guess.isalpha():
-            ramainWrongGuess -= 1
-            wrongGuess.append(guess)
+        if not correct and guess not in wrong_guess and guess not in word and guess.isalpha():
+            ramain_wrong_guess -= 1
+            wrong_guess.append(guess)
 
-    if lenCharToAns == 0:
+    if length_char_to_answer == 0:
         print('Congratulation! you won with word ' +
               word + ' and score '+str(score)+' Pts.')
     else:
@@ -110,9 +110,9 @@ def hangman(word):
 
 
 if __name__ == "__main__":
-    listWordList()
-    chooseWordList()
-    randomNumber = rand()
-    showHint(randomNumber)
-    word = wordlist[randomNumber]['TITLE']
+    listword_list()
+    chooseword_list()
+    random_number = rand()
+    show_hint(random_number)
+    word = word_list[random_number]['TITLE']
     hangman(word)
