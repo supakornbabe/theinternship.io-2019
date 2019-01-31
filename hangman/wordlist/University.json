@@ -1,0 +1,32 @@
+{
+    "WORDLIST": [{
+        "TITLE": "Kasetsart University",
+        "COUNTRY": "Thailand",
+        "PROVINCE": "Bangkok"
+    }, {
+        "TITLE": "Chulalongkorn University",
+        "COUNTRY": "Thailand",
+        "PROVINCE": "Bangkok"
+    }, {
+        "TITLE": "Thammasat University",
+        "COUNTRY": "Thailand",
+        "PROVINCE": "Pathumthani"
+    }, {
+        "TITLE": "Bangkok University",
+        "COUNTRY": "Thailand",
+        "PROVINCE": "Pathumthani"
+    }, {
+        "TITLE": "Mahidol University",
+        "COUNTRY": "Thailand",
+        "PROVINCE": "Nakhon Pathom"
+    }, {
+        "TITLE": "Khon Kaen University",
+        "COUNTRY": "Thailand",
+        "PROVINCE": "Khon Kaen"
+    }, {
+        "TITLE": "Chiang Mai University",
+        "COUNTRY": "Thailand",
+        "PROVINCE": "Chiang Mai"
+    }],
+    "HINT": "University in $PROVINCE $COUNTRY"
+}

@@ -1,0 +1,164 @@
+{
+    "WORDLIST": [{
+            "TITLE": "ONE KISS",
+            "ARTIST": "CALVIN HARRIS & DUA LIPA"
+        },
+        {
+            "TITLE": "GOD'S PLAN",
+            "ARTIST": "DRAKE"
+        },
+        {
+            "TITLE": "SHOTGUN",
+            "ARTIST": "GEORGE EZRA"
+        },
+        {
+            "TITLE": "THIS IS ME",
+            "ARTIST": "SETTLE/GREATEST SHOWMAN ENS"
+        },
+        {
+            "TITLE": "THESE DAYS",
+            "ARTIST": "RUDIMENTAL/GLYNNE/MACKLEMORE"
+        },
+        {
+            "TITLE": "PERFECT",
+            "ARTIST": "ED SHEERAN"
+        },
+        {
+            "TITLE": "NICE FOR WHAT",
+            "ARTIST": "DRAKE"
+        },
+        {
+            "TITLE": "PARADISE",
+            "ARTIST": "GEORGE EZRA"
+        },
+        {
+            "TITLE": "NO TEARS LEFT TO CRY",
+            "ARTIST": "ARIANA GRANDE"
+        },
+        {
+            "TITLE": "FEEL IT STILL",
+            "ARTIST": "PORTUGAL THE MAN"
+        },
+        {
+            "TITLE": "IDGAF",
+            "ARTIST": "DUA LIPA"
+        },
+        {
+            "TITLE": "2002",
+            "ARTIST": "ANNE-MARIE"
+        },
+        {
+            "TITLE": "FRIENDS",
+            "ARTIST": "MARSHMELLO & ANNE-MARIE"
+        },
+        {
+            "TITLE": "FREAKY FRIDAY",
+            "ARTIST": "LIL DICKY FT CHRIS BROWN"
+        },
+        {
+            "TITLE": "IN MY FEELINGS",
+            "ARTIST": "DRAKE"
+        },
+        {
+            "TITLE": "SOLO",
+            "ARTIST": "CLEAN BANDIT FT DEMI LOVATO"
+        },
+        {
+            "TITLE": "HAVANA",
+            "ARTIST": "CAMILA CABELLO FT YOUNG THUG"
+        },
+        {
+            "TITLE": "THE GREATEST SHOW",
+            "ARTIST": "JACKMAN/SETTLE/EFRON/ZENDAYA"
+        },
+        {
+            "TITLE": "EASTSIDE",
+            "ARTIST": "BENNY BLANCO/HALSEY/KHALID"
+        },
+        {
+            "TITLE": "NEW RULES",
+            "ARTIST": "DUA LIPA"
+        },
+        {
+            "TITLE": "BETTER NOW",
+            "ARTIST": "POST MALONE"
+        },
+        {
+            "TITLE": "PSYCHO",
+            "ARTIST": "POST MALONE FT TY DOLLA SIGN"
+        },
+        {
+            "TITLE": "I LIKE IT",
+            "ARTIST": "CARDI B/BAD BUNNY/J BALVIN"
+        },
+        {
+            "TITLE": "ROCKSTAR",
+            "ARTIST": "POST MALONE FT 21 SAVAGE"
+        },
+        {
+            "TITLE": "PROMISES",
+            "ARTIST": "CALVIN HARRIS & SAM SMITH"
+        },
+        {
+            "TITLE": "GIRLS LIKE YOU",
+            "ARTIST": "MAROON 5 FT CARDI B"
+        },
+        {
+            "TITLE": "LULLABY",
+            "ARTIST": "SIGALA & PALOMA FAITH"
+        },
+        {
+            "TITLE": "YOUNGBLOOD",
+            "ARTIST": "5 SECONDS OF SUMMER"
+        },
+        {
+            "TITLE": "BARKING",
+            "ARTIST": "RAMZ"
+        },
+        {
+            "TITLE": "RIVER",
+            "ARTIST": "EMINEM FT ED SHEERAN"
+        },
+        {
+            "TITLE": "SHAPE OF YOU",
+            "ARTIST": "ED SHEERAN"
+        },
+        {
+            "TITLE": "REWRITE THE STARS",
+            "ARTIST": "ZAC EFRON & ZENDAYA"
+        },
+        {
+            "TITLE": "BODY",
+            "ARTIST": "LOUD LUXURY FT BRANDO"
+        },
+        {
+            "TITLE": "I'LL BE THERE",
+            "ARTIST": "JESS GLYNNE"
+        },
+        {
+            "TITLE": "THE MIDDLE",
+            "ARTIST": "ZEDD/MAREN MORRIS/GREY"
+        },
+        {
+            "TITLE": "LEAVE A LIGHT ON",
+            "ARTIST": "TOM WALKER"
+        },
+        {
+            "TITLE": "A MILLION DREAMS",
+            "ARTIST": "ZIV ZAIFMAN/JACKMAN/WILLIAMS"
+        },
+        {
+            "TITLE": "ALL THE STARS",
+            "ARTIST": "KENDRICK LAMAR & SZA"
+        },
+        {
+            "TITLE": "BREATHE",
+            "ARTIST": "JAX JONES FT INA WROLDSEN"
+        },
+        {
+            "TITLE": "TASTE",
+            "ARTIST": "TYGA FT OFFSET"
+        }
+    ],
+    "HINT": "Artist Name : $ARTIST"
+}
