@@ -97,7 +97,7 @@ def hangman(word):
                 blind[i] = word[i]
                 lenCharToAns -= 1
                 correct = True
-        if (not correct) and (guess not in wrongGuess) and guess not in word:
+        if not correct and guess not in wrongGuess and guess not in word and guess.isalpha():
             ramainWrongGuess -= 1
             wrongGuess.append(guess)
 
