@@ -3,6 +3,11 @@
 ## Credit
 xmltodict: https://github.com/martinblech/xmltodict
 
+## Installation
+> cd weather
+
+> pip install -r requirement.txt
+
 ## How to use
 This command will create the output json file with the same name of input file name.
 
