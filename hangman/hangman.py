@@ -2,8 +2,8 @@ import json
 import os
 from random import randint
 
-directory = './wordlist/'
-file_location = './wordlist/'
+directory = './Category/'
+file_location = './Category/'
 filelist = []
 categoryList = []
 userCategory = ''
